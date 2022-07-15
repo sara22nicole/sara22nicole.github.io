@@ -1,0 +1,307 @@
+/* CSS variables */
+:root {
+  /* Populated with JS. Needed for calculations with `vw` unit */
+  --scrollbar: var(--scrollbarX, 0);
+  --scrollbarHalf: calc(var(--scrollbar) / 2);
+  --padding-sides: min(6vw, 64px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  Font-Family: 'Lato', Sans-Serif;
+  Font-Size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+a:link{
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #da5334;
+}
+
+a:visited{
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #da5334;
+}
+
+a:hover{
+  color: #da5334;
+  border-bottom: 2px solid #da5334;
+
+}
+
+/* Container for the entire page*/
+.container {
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 var(--padding-sides);
+  outline: 1px solid blue;
+}
+
+.content {
+  max-width: 65ch;
+  margin: 0 auto;
+  outline: 1px solid green;
+}
+
+.content--wide {
+  max-width: 1100px;
+}
+
+.full-bleed {
+  width: 100vw;
+  width: calc(100vw - var(--scrollbar));
+  margin-left: calc(50% - (50vw - var(--scrollbarHalf)));
+  /* background: #f1f1f1; */
+}
+
+.bg-light{
+  background-color: #dee9ed;
+}
+
+.bg-accent{
+  background-color: #fccbb8;
+}
+
+.full-bleed .content {
+  padding: 0 var(--padding-sides);
+  clear: both;
+  outline-color: red;
+}
+
+.block {
+  --margin-text-side: 2rem;
+  --margin-gutter-side: calc(var(--padding-sides) * -2);
+  max-width: 50%;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding:  1rem;
+}
+
+.block--left {
+  float: left;
+  margin-right: var(--margin-text-side);
+  margin-left: var(--margin-gutter-side);
+}
+
+.block--right {
+  float: right;
+  margin-right: var(--margin-gutter-side);
+  margin-left: var(--margin-text-side);
+}
+
+/* HERO SECTION */
+.hero-image{
+  background-image: linear-gradient(to bottom, rgba(18,19,44,0) 25%, rgba(18,19,44,1)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(18,19,44,0.4);
+  background-blend-mode: multiply;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+hr{
+  border: 1px solid #d95334;
+  width: 70%;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  Font-Family: 'Arvo', Serif;
+  Font-Size: 2rem;
+  Line-Height: 1.5;
+  font-weight: 600;
+}
+
+.date{
+  color: #d95334;
+  text-align: center;
+  Font-Family: 'Lato', Sans-Serif;
+  Font-Size: 1rem;
+  line-height: 1.4;
+  padding-bottom: 25px;
+}
+
+/* BODY */
+h2{
+  Font-Family: 'Arvo', Serif;
+  Font-Size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #263964;
+}
+
+.center-align{
+  text-align: center;
+}
+
+.total-refugees-figure{
+  background-image: url(../img/SurveyGraphic_Final-globalrefugees.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:200px;
+}
+
+.refugees-resettled-figure{
+  background-image: url(../img/SurveyGraphic_Final-refugeesresettled-p-2600.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 141px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:200px;
+}
+
+.refugees-resettled-us-figure{
+  background-image: url(../img/SurveyGraphic_Final-resettledinUS-p-2600.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 160px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.name{
+  font-family: 'Permanent Marker', cursive;
+  color: #d95334;
+  font-size: 40px;
+}
+
+.joseph{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 50px;
+  margin-bottom: 20px; */
+}
+
+.joseph-multimedia{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 100px;
+}
+
+
+.yasmin{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px; */
+  /* margin-bottom: 20px; */
+}
+
+.yasmin-multimedia{
+  /* background-image: url(../img/Portraits380px-01.png); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.photo{
+  max-width: 340px;
+  height: auto;
+}
+
+.quote{
+  font-family: 'Permanent Marker', cursive;
+  color: #2b4f82;
+  font-size: 24px;
+}
+
+
+.button{
+  background-color: white;
+  color:#2b4f82;
+  border: 2px solid #2b4f82;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 10px 30px;
+}
+
+.button:hover {
+  background-color: #2b4f82;
+  color: white;
+}
+
+.selected{
+  background-color: #2b4f82;
+  color: white;
+}
+
+.show{
+  display: block
+}
+
+.hide{
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 546px) {
+  .joseph{
+    display: flex;
+    flex-direction: column;}
+  .yasmin{
+    display: flex;
+    flex-direction: column;}
+
+  .block {
+    --margin-text-side: 0px;
+    --margin-gutter-side: 0px;
+    width: 100%;
+  }
+
+  .block--left {
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .block--right {
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;  }
+    
+  
+}
+
+/* TABLET */
+@media (min-width: 546px) and (max-width: 768px) {
+  
+  .joseph{
+    display: flex;
+    flex-direction: column;}
+  .yasmin{
+    display: flex;
+    flex-direction: column;}
+  
+}
