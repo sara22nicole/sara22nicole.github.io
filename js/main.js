@@ -1,5 +1,4 @@
 // Calculates the width of the user's scrollbar to modify the 100vw value in CSS.
-// Taken from: https://codepen.io/Mamboleoo/post/scrollbars-and-css-custom-properties
 
 const getScrollbarSize = () => {
     // Create a temporary div container and append it into the body
@@ -51,5 +50,15 @@ function toggleCharts(){
   buttonReligion.classList.toggle('selected')
 
 }
+// CREATES SMOOTH SCROLL FOR ANCHOR JUMPS
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
 
 
