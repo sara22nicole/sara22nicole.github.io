@@ -1,4 +1,4 @@
-// Calculates the width of the user's scrollbar to modify the 100vw value in CSS.
+// Calculates the width of the user's scrollbar to modify the 100vw value in CSS for Windows users that have an always present in scroll bar.
 
 const getScrollbarSize = () => {
     // Create a temporary div container and append it into the body

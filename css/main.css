@@ -233,7 +233,7 @@ h1{
 .scroll-indicator{
   text-align: center;
   font-size: 14px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 a.special-link{
@@ -252,7 +252,7 @@ a.special-link:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 55px;
+  bottom: 65px;
   left: 50%;
   width: 22px;
   height: 22px;
@@ -483,11 +483,7 @@ a.special-link:hover{
   display: none;
 }
 
-#observable-chart-region{
-  margin-bottom: 75px;
-}
-
-#observable-chart-religion{
+.observable-chart-source{
   margin-bottom: 75px;
 }
 
