@@ -9,32 +9,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  Font-Family: 'Lato', Sans-Serif;
   Font-Size: 18px;
   line-height: 1.6;
   color: #333;
-  background-color: #fbfbfa;
-  overflow-x: hidden;
-}
-
-.fl-scrolly-step { 
-              width: 80% !important;
-              max-width: 550px;
-          }
-
-.emphasis{
-  font-weight:700;
 }
 
 a:link{
   color: #333;
   text-decoration: none;
-  border-bottom: 2px solid #4d9221;
-}
-
-.pink{
-  color: #d3238a;
+  border-bottom: 1px solid #da5334;
 }
 
 a:visited{
@@ -44,18 +28,16 @@ a:visited{
 }
 
 a:hover{
-  color: #EF5399;
-  border-bottom: 3px solid #EF5399;
+  color: #da5334;
+  border-bottom: 2px solid #da5334;
 }
 
 h2{
-  font-family: "Courgette", cursive;
-  font-weight: 400;
-  font-style: normal;
+  Font-Family: 'Arvo', Serif;
   Font-Size: 1.7rem;
+  font-weight: 600;
   line-height: 1.4;
-  color: #4d9221;
-  /*color: #D3238A;*/
+  color: #263964;
 }
 
 .center{
@@ -72,19 +54,15 @@ h2{
   max-width: 1200px;
   margin: auto;
   padding: 0 var(--padding-sides);
-  border: 0px solid green;
 }
 
 .content {
   max-width: 65ch;
   margin: 0 auto;
-  border: 0px solid red;
-  position: relative;
 }
 
 .content--wide {
   max-width: 1100px;
-  border: 0px solid blue;
 }
 
 .full-bleed {
@@ -94,7 +72,7 @@ h2{
 }
 
 .bg-light{
-  background-color: #f9e9ee;
+  background-color: #dee9ed;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -154,12 +132,12 @@ h2{
 .hero-image{
   position: sticky;
   top: 0;
-  background-image: url(../img/pattern-v2.png), linear-gradient(to bottom,#9bdcf9, transparent);
+  background-image: url(../img/hero.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /*background-color: rgba(239,83,153,0.001);*/ 
-  /*background-blend-mode: multiply;*/
+  background-color: rgba(18,19,44,0.4);
+  background-blend-mode: multiply;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -173,8 +151,7 @@ h2{
   right: 0;
   bottom: 0;
   left: 0;
-  /*background-color: rgba(255,255,255,0.2);*/
-  /*background: linear-gradient(to bottom,transparent, #ffffff80);*/
+  background: linear-gradient(to top,#12132c, transparent);
   opacity: 0;
   animation-duration: 1.5s;
   animation-name: fadein;
@@ -186,11 +163,6 @@ h2{
   z-index: 2;
 }
 
-.header-bg{
-  /*background-color: rgba(255,255,255,0.85);
-  margin-bottom: 50px;*/
-}
-
 .hero-text h1,
 .hero-text p {
   opacity: 0;
@@ -198,7 +170,6 @@ h2{
   animation-delay: 1s;
   animation-name: fadein, slideup;
   animation-fill-mode: forwards;
-  backdrop-filter: blur(1px);
 }
 
 hr {
@@ -242,22 +213,18 @@ hr {
 }
 
 h1{
-  color: #549826;
-  text-shadow: #286719 .2rem .2rem;
-  font-family: "Courgette", cursive;
+  color: white;
   text-align: center;
-  font-weight: 400;
-  font-style: normal;
-  Font-Size: 5rem;
+  Font-Family: 'Arvo', Serif;
+  Font-Size: 2rem;
   Line-Height: 1.5;
-  margin-top: 35%;
-  margin-bottom: 65%;
+  font-weight: 600;
 }
 
 .date{
-  color: #333;
+  color: #d95334;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  Font-Family: 'Lato', Sans-Serif;
   Font-Size: 1rem;
   line-height: 1.4;
   padding-bottom: 50px;
@@ -271,7 +238,7 @@ h1{
 
 a.special-link{
   text-align: center;
-  color: #333;
+  color: white;
   text-decoration: none;
   border-bottom: 0px;
 }
@@ -290,8 +257,8 @@ a.special-link:hover{
   width: 22px;
   height: 22px;
   margin-left: -12px;
-  border-left: 1px solid #333;
-  border-bottom: 1px solid #333;
+  border-left: 1px solid white;
+  border-bottom: 1px solid #fff;
   transform: rotate(-45deg);
   animation: arrow-scroll 2s infinite;
   box-sizing: border-box;
@@ -319,22 +286,14 @@ a.special-link:hover{
   text-align: center;
 }
 
-.flower{
-  position: absolute;
-  z-index: -3;
-  max-width: 200px;
-  transform: rotate(15deg);
-  
+.survey-arrow{
+  position: relative;
+  left: 55%;
+  z-index: 1;
+  bottom: -50px;
+  max-width: 400px;
+  transform: rotate(25deg);
 }
-
-.left-aligned{
-  left: -70%;
-}
-
-.right-aligned{
-  right: -70%;
-}
-
 /* PERSONAL STORIES */
 .name-blue{
   font-family: 'Permanent Marker', cursive;
@@ -421,7 +380,7 @@ a.special-link:hover{
 /* Blockquote attribution */
 .blockquote .attribution {
   position: relative;
-  font-family: "Open Sans", sans-serif;
+  Font-Family: 'Lato', Sans-Serif;
   line-height: 1.4;
   color: #333;
   font-size: 14px;
@@ -465,7 +424,7 @@ a.special-link:hover{
 
 .blockquote-red .attribution {
   position: relative;
-  font-family: "Open Sans", sans-serif;
+  Font-Family: 'Lato', Sans-Serif;
   line-height: 1.4;
   color: #333;
   font-size: 14px;
@@ -487,7 +446,7 @@ a.special-link:hover{
 .accent{
   color: #d95334;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
+  Font-Family: 'Lato', Sans-Serif;
   Font-Size: 1rem;
   font-weight: 700;
   line-height: 1.4;
@@ -548,10 +507,6 @@ a.special-link:hover{
   margin-top: 300px;
 }
 
-.about{
-  font-size: 16px;
-}
-
 /* MOBILE */
 @media (max-width: 546px) {
   .joseph {
@@ -588,7 +543,7 @@ a.special-link:hover{
     margin-left: 0px;
     margin-right: 0px;  }
   
-  .flower{
+  .survey-arrow{
       display:none;
     }
 }
@@ -634,7 +589,7 @@ a.special-link:hover{
     margin-right: 0px;  
   }
   
-  .flower{
+  .survey-arrow{
     display:none;
   }
   
